@@ -18,27 +18,27 @@ var randomColorGuess = function () {
         color1.style.backgroundColor = "red";
         color1.textContent = "Your Correct Color is Red ";
     }
-    else if (value == "green" && randomColor == "green") {
+    if (value == "green" && randomColor == "green") {
         var color1 = document.getElementById("color2");
         color1.style.backgroundColor = "Green";
         color1.textContent = "Your Correct Color is Green ";
     }
-    else if (value == "blue" && randomColor == "blue") {
+    if (value == "blue" && randomColor == "blue") {
         var color1 = document.getElementById("color3");
         color1.style.backgroundColor = "blue";
         color1.textContent = "Your Correct Color is Blue";
     }
-    else if (value == "red" && randomColor == "red") {
+    if (value == "red" && randomColor == "red") {
         var color1 = document.getElementById("color1");
         color1.style.backgroundColor = "red";
         color1.textContent = "Your Correct Color is Red";
     }
-    else if (value == "green" && randomColor == "blue") {
+    if (value == "green" && randomColor == "blue") {
         var color1 = document.getElementById("color1");
         color1.style.backgroundColor = "blue";
         color1.textContent = "Your Correct Color is Blue ";
     }
-    else if (value == "green" && randomColor != "blue") {
+    if (value == "green" && randomColor != "blue") {
         var color1 = document.getElementById("color1");
         color1.style.backgroundColor = "blue";
         color1.textContent = "Your Correct Color is Blue ";

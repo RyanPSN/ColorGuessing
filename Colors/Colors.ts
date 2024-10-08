@@ -24,23 +24,33 @@ const randomColorGuess = () => {
     color1.style.backgroundColor = "red";
 
     color1.textContent = "Your Correct Color is Red ";
-  } else if (value == "green" && randomColor == "green") {
+  }
+
+  if (value == "green" && randomColor == "green") {
     const color1: any = document.getElementById("color2");
     color1.style.backgroundColor = "Green";
     color1.textContent = "Your Correct Color is Green ";
-  } else if (value == "blue" && randomColor == "blue") {
+  }
+
+  if (value == "blue" && randomColor == "blue") {
     const color1: any = document.getElementById("color3");
     color1.style.backgroundColor = "blue";
     color1.textContent = "Your Correct Color is Blue";
-  } else if (value == "red" && randomColor == "red") {
+  }
+
+  if (value == "red" && randomColor == "red") {
     const color1: any = document.getElementById("color1");
     color1.style.backgroundColor = "red";
     color1.textContent = "Your Correct Color is Red";
-  } else if (value == "green" && randomColor == "blue") {
+  }
+
+  if (value == "green" && randomColor == "blue") {
     const color1: any = document.getElementById("color1");
     color1.style.backgroundColor = "blue";
     color1.textContent = "Your Correct Color is Blue ";
-  } else if (value == "green" && randomColor != "blue") {
+  }
+
+  if (value == "green" && randomColor != "blue") {
     const color1: any = document.getElementById("color1");
     color1.style.backgroundColor = "blue";
     color1.textContent = "Your Correct Color is Blue ";
