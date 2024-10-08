@@ -1,18 +1,23 @@
-const color: string[] = [];
+const color: Array<any> = [];
 color.push("red");
 color.push("green");
 color.push("blue");
 
+interface Colors {
+  x: any;
+}
+
 const randomColors = Math.floor(Math.random() * color.length);
+const colors = color[randomColors];
 const randomColor = color[randomColors];
 
 const randomColorGuess = () => {
   const guess: any = document.getElementById("guess");
   const value = guess.value;
-
-  if (value == randomColor && randomColor == "red") {
+  if (value == "red" && randomColor == "red") {
     const color1: any = document.getElementById("color1");
     color1.style.backgroundColor = "red";
+
     color1.textContent = "Your Correct Color is Red ";
   } else if (value == "green" && randomColor == "green") {
     const color1: any = document.getElementById("color2");

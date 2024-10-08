@@ -3,11 +3,12 @@ color.push("red");
 color.push("green");
 color.push("blue");
 var randomColors = Math.floor(Math.random() * color.length);
+var colors = color[randomColors];
 var randomColor = color[randomColors];
 var randomColorGuess = function () {
     var guess = document.getElementById("guess");
     var value = guess.value;
-    if (value == randomColor && randomColor == "red") {
+    if (value == "red" && randomColor == "red") {
         var color1 = document.getElementById("color1");
         color1.style.backgroundColor = "red";
         color1.textContent = "Your Correct Color is Red ";
