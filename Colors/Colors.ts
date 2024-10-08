@@ -3,17 +3,22 @@ color.push("red");
 color.push("green");
 color.push("blue");
 
-interface Colors {
-  x: any;
-}
-
 const randomColors = Math.floor(Math.random() * color.length);
-const colors = color[randomColors];
 const randomColor = color[randomColors];
+
+type EmptyMessage = null | undefined;
+
+const isEmpty = <EmptyMessage>(a: any) => {
+  return a == "";
+};
 
 const randomColorGuess = () => {
   const guess: any = document.getElementById("guess");
   const value = guess.value;
+  if (isEmpty(value)) {
+    alert("Empty..");
+  }
+
   if (value == "red" && randomColor == "red") {
     const color1: any = document.getElementById("color1");
     color1.style.backgroundColor = "red";
