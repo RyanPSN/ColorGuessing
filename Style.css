@@ -1,0 +1,68 @@
+#color1 {
+  background-color: red;
+  padding: 1rem;
+  height: 50px;
+}
+
+#color2 {
+  background-color: green;
+  padding: 1rem;
+  height: 50px;
+}
+
+#color3 {
+  background-color: blue;
+  /* margin: 1rem; */
+  padding: 1rem;
+  height: 50px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+div {
+  width: calc(300px + 32%);
+  margin: calc(0.5rem + 0.9rem);
+}
+
+body {
+  background-color: rgb(20, 12, 56);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+button {
+  display: block;
+  /* margin: 0 ; */
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input {
+  padding: 20px;
+  width: 440px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  div {
+    width: calc(70% + 80px);
+    margin: calc(0.5rem + 0.9rem) auto;
+  }
+
+  input {
+    width: 400px;
+  }
+}
